@@ -1,0 +1,24 @@
+*,
+**::before,
+**::after {
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+$wrapper: 1200px;
+$Basic-red: #EE3643;
+$Basic-green: #63A63E;
+$Basic-grey: #3D546F;
+$Basic-greylight :#C5C5C5;
+$Basic-background: #F1F5F7;
+$Wight: #fff;
+$Special-ylellow: #FFBF47;
+$Special-blue: #3BBCE3;
+$Special-lilac: #DC91D8;
+$Special-greenlight: #8ED78F;
+$Special-yellowlight: #FFD180;
+$Success: #5FBB2D;
+$warning: #FFBF47;
+$error: #BA2732;
+$lightgray: #EAEAEA;
+$pt: 'Cuprum', sans-serif;
+$cu: 'PT Sans', sans-serif;
