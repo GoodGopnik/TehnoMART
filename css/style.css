@@ -348,4 +348,57 @@ template {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  background: #fff;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+header {
+  background: #293449;
+  min-height: 42px;
+}
+
+.container-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  background: #EE3643;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 55px;
+  -webkit-box-shadow: 0 5px 0 #BA2732;
+          box-shadow: 0 5px 0 #BA2732;
+  margin-right: 17px;
+}
 /*# sourceMappingURL=style.css.map */

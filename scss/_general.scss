@@ -8,6 +8,7 @@ $wrapper: 1200px;
 $Basic-red: #EE3643;
 $Basic-green: #63A63E;
 $Basic-grey: #3D546F;
+$darkblue: #293449;
 $Basic-greylight :#C5C5C5;
 $Basic-background: #F1F5F7;
 $Wight: #fff;
@@ -22,3 +23,22 @@ $error: #BA2732;
 $lightgray: #EAEAEA;
 $pt: 'Cuprum', sans-serif;
 $cu: 'PT Sans', sans-serif;
+
+body {
+    background: $Wight;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+@mixin flex($fw, $fd, $jc, $ai) {
+    display: flex;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
