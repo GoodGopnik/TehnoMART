@@ -386,6 +386,14 @@ header {
           align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .container-header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .logo {
   text-decoration: none;
   text-transform: uppercase;
@@ -399,6 +407,135 @@ header {
   padding: 0 55px;
   -webkit-box-shadow: 0 5px 0 #BA2732;
           box-shadow: 0 5px 0 #BA2732;
-  margin-right: 17px;
+}
+
+.icon-search {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  padding: 0;
+  z-index: 2;
+}
+
+.icon-search:hover path {
+  fill: #fff;
+}
+
+.search {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  padding-left: 17px;
+  height: 42px;
+  width: 220px;
+}
+
+@media (max-width: 1000px) {
+  .search {
+    width: 100%;
+  }
+}
+
+.search label {
+  color: #fff;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.input-serch {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input-serch.show-input {
+  width: 100%;
+  padding: 0 15px 0 42px;
+}
+
+@media (max-width: 1000px) {
+  .input-serch.show-input {
+    padding: 0;
+  }
+}
+
+.icon-search.show-input path {
+  fill: #BA2732;
+}
+
+.order {
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  background: #63A63E;
+  height: 42px;
+  line-height: 42px;
+  width: 150px;
+  text-align: center;
+}
+
+.order:hover {
+  background: #5FBB2D;
+}
+
+.order:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bookmark,
+.cart {
+  color: #fff;
+  padding: 0 26px 0 20px;
+  height: 42px;
+  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bookmark span,
+.cart span {
+  margin-left: 9px;
+}
+
+.bookmark:hover path,
+.cart:hover path {
+  fill: #fff;
+}
+
+.bookmark:active,
+.cart:active {
+  background: #161D29;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bookmark:active path,
+.cart:active path {
+  fill: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=style.css.map */

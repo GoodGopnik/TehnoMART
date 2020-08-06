@@ -6,7 +6,10 @@ header {
     min-height: 42px;
 }
 .container-header {
-    @include flex(wrap, row, space-between, center)
+    @include flex(wrap, row, space-between, center);
+    @media (max-width: 1000px) {
+        justify-content: center;
+    }
 }
 .logo {
     text-decoration: none;
@@ -20,5 +23,158 @@ header {
     line-height: 42px;
     padding: 0 55px;
     box-shadow: 0 5px 0 $error;
-    margin-right: 17px;
 }
+.icon-search {
+    cursor: pointer; // делаем курсор на SVG
+    background: none;
+    border: none;
+    outline: none; //убираем рамки
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    padding: 0;
+    z-index: 2;
+    &:hover path {
+        fill: $Wight;
+    }
+}
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-left: 17px;
+    height: 42px;
+    width: 220px;
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
+    label {
+        color: $Wight;
+        font-size: 18px;
+        font-family: $cu;
+    }
+}
+.input-serch {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: $cu;
+    color: $black;
+    transition: 0.5s;
+}
+.input-serch.show-input {
+    width: 100%;
+    padding: 0 15px 0 42px;
+    @media (max-width: 1000px){
+        padding: 0;
+    }
+}
+.icon-search.show-input path {
+    fill: $error;
+}
+.order {
+    font-size: 18px;
+    font-family: $cu;
+    color: $Wight;
+    text-decoration: none;
+    background: $Basic-green;
+    height: 42px;
+    line-height: 42px;
+    width: 150px;
+    text-align: center;
+    &:hover {
+        background: $Success;
+    }
+    &:active {
+        color: rgba($Wight, 0.5);
+    }
+}
+.bookmark,
+.cart {
+    color: $Wight;
+    padding: 0 26px 0 20px;
+    height: 42px;
+    text-decoration: none;
+    font-family: $cu;
+    font-size: 18px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    span {
+        margin-left: 9px;
+    }
+    &:hover path {
+        fill: $Wight;
+    }
+    &:active {
+        background: $navy;
+        color: rgba($Wight, 0.5);
+    }
+    &:active path {
+        fill: rgba($Wight, 0.5);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $wrapper: 1200px;
+// $Basic-red: #EE3643;
+// $Basic-green: #63A63E;
+// $Basic-grey: #3D546F;
+// $darkblue: #293449;
+// $navy: #161D29;
+// $Basic-greylight :#C5C5C5;
+// $Basic-background: #F1F5F7;
+// $black: #000;
+// $Wight: #fff;
+// $Special-ylellow: #FFBF47;
+// $Special-blue: #3BBCE3;
+// $Special-lilac: #DC91D8;
+// $Special-greenlight: #8ED78F;
+// $Special-yellowlight: #FFD180;
+// $Success: #5FBB2D;
+// $warning: #FFBF47;
+// $error: #BA2732;
+// $lightgray: #EAEAEA;
+// $pt: 'Cuprum', sans-serif;
+// $cu: 'PT Sans', sans-serif;
