@@ -121,6 +121,104 @@ header {
     }
 }
 
+.header-block {
+    background: rgba(0, 0, 0, 0.01);
+    padding: 40px 0 60px;
+}
+.top-header-container {
+    @include flex(wrap, row, space-between, flex-start);
+    padding: 0 15px;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.slogan {
+    width: 230px;
+    font-size: 16px;
+    color: $Basic-red;
+    line-height: 23px;
+    font-family: $cu;
+    font-style: italic;
+    @media (max-width: 1000px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+.phone {
+    text-decoration: none;
+    border: 3px solid $Wight;
+    width: 270px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-left: 40px;
+    color: $Basic-red;
+    font-size: 21px;
+    @media (max-width: 500px) {
+        width: 200px;
+        font-size: 18px;
+        padding-left: 20px;
+        margin: 0 auto;
+    }
+}
+.phone svg {
+    padding-right: 16px;
+}
+address {
+    font-size: 14px;
+    color: #32425C;
+    font-family: $cu;
+    text-align: center;
+    font-style: normal;
+    margin-top: 5px;
+}
+.reg-login {
+    a {
+        text-decoration: none;
+        background: $Wight;
+        color: $black;
+        font-size: 21px;
+        font-family: $cu;
+        font-style: normal;
+        display: inline-block;
+    &:hover {
+        color: $Basic-red;
+    }
+    &:hover path {
+        fill: $Basic-grey;
+    }
+    &:active {
+        color: $Basic-greylight;
+    }
+    &:active path {
+        fill: $Basic-greylight;
+    }
+    }
+    .login {
+    padding: 12px 20px;
+    margin-right: 10px;
+    @media (max-width: 330px) {
+        margin-right: 2px;
+    }
+    svg {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3px;
+    }
+    }
+    .reg {
+    padding: 12px 24px;
+    }
+}
+.header-contacts {
+    @media (max-width: 1000px) {
+        margin: 20px 0;
+    }
+}
+
+
 
 
 
