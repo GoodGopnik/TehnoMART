@@ -715,6 +715,12 @@ address {
   }
 }
 
+.menu ul.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menu a {
   color: #fff;
   text-decoration: none;
