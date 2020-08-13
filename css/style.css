@@ -768,6 +768,68 @@ address {
     padding: 16px 0;
     width: 100%;
     outline: none;
+    -webkit-box-shadow: inset 0px -5px 0px #293449;
+            box-shadow: inset 0px -5px 0px #293449;
   }
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.features-slider-block {
+  max-width: 620px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid red;
+}
+
+.features-item {
+  max-width: 300px;
+  height: 123px;
+  padding: 20px 22px 21px;
+  color: #fff;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.features-block {
+  width: 300px;
+  border: 1px solid red;
+}
+
+.features-materials {
+  background: #FFBF47;
+}
+
+.features-tools {
+  background: #3BBCE3;
+}
+
+.features-tehnics {
+  background: #DC91D8;
+}
+
+.features-discounts {
+  background: #8ED78F;
+}
+
+.features-delivery {
+  background: #FFC047;
 }
 /*# sourceMappingURL=style.css.map */
